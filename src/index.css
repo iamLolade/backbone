@@ -7,6 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("../public/lay.jpg") no-repeat fixed;
+  background-size: cover;
 }
 
 code {
@@ -26,6 +28,13 @@ nav h1 {
   margin: 0 auto;
   max-width: 1200px;
   letter-spacing: 10px;
+}
+
+nav img {
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: -45px;
+  margin-left: 60px;
 }
 
 .content {
