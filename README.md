@@ -1,9 +1,7 @@
 # Back Bone
 
 #### Single-page application, implementing skeleton layout.
-* Built with React, using;
-.useEffect
-.useState
+* Built with React, using; useEffect, and useState
 
 ![Screenshot](public/preview.png)
 
