@@ -47,3 +47,12 @@ nav h1 {
   background-color: rgba(238, 238, 238, 0.11);
   letter-spacing: 2px;
 }
+
+.set {
+  margin: 15px;
+  margin-top: 25px;
+}
+
+.set h4 {
+  text-transform: capitalize;
+}

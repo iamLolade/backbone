@@ -15,15 +15,16 @@ const Article = () => {
     return ( 
         <div className="articles">
             <h2>Article</h2>
-
-            {articles && articles.map(article => (
-                    <div className="article" key={article.id}>
-                        <h4>{article.title}</h4>
-                        <p>{article.body}</p>
-                    </div>
-                ))
-            }
-            {!articles && [1,2,3,4,5,6].map(n => <SkeletonArticle key={n}/>)}
+            <div className="set">
+                {articles && articles.map(article => (
+                        <div className="article" key={article.id}>
+                            <h4>{article.title}</h4>
+                            <p>{article.body}</p>
+                        </div>
+                    ))
+                }
+                {!articles && [1,2,3,4,5,6].map(n => <SkeletonArticle key={n}/>)}
+            </div>
         </div>
      );
 }
