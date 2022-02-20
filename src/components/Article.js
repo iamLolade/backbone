@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SkeletonElement from "../skeletons/SkeletonElement";
 
 const Article = () => {
     const [articles, setArticles] = useState(null);
@@ -13,9 +14,13 @@ const Article = () => {
     return ( 
         <div className="articles">
             <h2>Article</h2>
+
+            <SkeletonElement type="text" />
+            <SkeletonElement type="thumbnail" />
+
             {articles && articles.map(article => (
                     <div className="article" key={article.id}>
-                        <h3>{article.title}</h3>
+                        <h4>{article.title}</h4>
                         <p>{article.body}</p>
                     </div>
                 ))
